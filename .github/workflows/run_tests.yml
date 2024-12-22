@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          repository: <Sneha781>/dev
+          repository: Sneha781/dev
           ref: main
 
       - name: Set up Node.js

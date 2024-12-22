@@ -10,7 +10,7 @@
     "jest": "^29.0.0"
   },
   "dependencies": {
-    // Your project's dependencies go here
+   
   },
   "jest": {
     "testEnvironment": "node"

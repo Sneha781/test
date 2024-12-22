@@ -2,8 +2,7 @@ name: Run Tests
 
 on:
   repository_dispatch:
-    types:
-      - trigger-tests
+    types: [trigger-tests]
 
 jobs:
   test:

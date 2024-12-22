@@ -1,6 +1,18 @@
 {
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A simple project to demonstrate Jest testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "dependencies": {
+    // Your project's dependencies go here
+  },
   "jest": {
-    "testMatch": ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"]
+    "testEnvironment": "node"
   }
 }
-

@@ -1,10 +1,6 @@
-{
-  "name": "dev",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "jest"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
-  }
-}
+// sum.test.js
+const sum = (a, b) => a + b;
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});

@@ -1,3 +1,6 @@
-"scripts": {
-  "test": "jest"
+"jest": {
+  "testMatch": [
+    "**/tests/**/*.test.js",
+    "**/?(*.)+(spec|test).js"
+  ]
 }

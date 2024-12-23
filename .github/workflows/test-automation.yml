@@ -1,13 +1,15 @@
-name: Run Tests on Trigger
+name: Test Automation Workflow
 
 on:
-  repository_dispatch:
-    types:
-      - run-tests
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3

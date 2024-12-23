@@ -1,7 +1,6 @@
 {
-  "name": "test-repo",
+  "name": "admin",
   "version": "1.0.0",
-  "description": "Repository for testing math functions",
   "scripts": {
     "test": "jest"
   },

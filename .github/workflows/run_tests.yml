@@ -1,27 +1,22 @@
-name: Run Tests
+
+
+name: Run Tests on Repository Dispatch
 
 on:
   repository_dispatch:
-    types: [trigger-tests]
+    types: [trigger-tests]  # Custom event type triggered by dispatch
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          repository: Sneha781/dev
-          ref: main
-
+      - uses: actions/checkout@v2
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'
-
-      - name: Install dependencies
+          node-version: '14'
+      - name: Install Dependencies
         run: npm install
-
-      - name: Run tests
+      - name: Run Tests
         run: npm test
+

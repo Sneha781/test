@@ -1,14 +1,10 @@
 {
   "name": "test-repo",
   "version": "1.0.0",
-  "description": "Test cases for the dev repository using Jest",
-  "main": "math.js",
+  "description": "Repository for testing math functions",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "Your Name",
-  "license": "ISC",
   "devDependencies": {
     "jest": "^29.0.0"
   }
